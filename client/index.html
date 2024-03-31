@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Inventory Management System</title>
+  </head>
+  <body>
+    <div class="main_body">
+      <div class="main_top">
+        <form onsubmit="handleinventory(event)" id="inventory_form">
+          <div class="input_box">
+            <label for="item_name">Item Name</label>
+            <input
+              type="text"
+              id="item_name"
+              name="item_name"
+              placeholder="Enter Item Name"
+            />
+          </div>
+          <div class="input_box">
+            <label for="description">Item Description</label>
+            <input
+              type="text"
+              id="description"
+              name="description"
+              placeholder="Enter Item description"
+            />
+          </div>
+          <div class="input_box">
+            <label for="price">Item Price</label>
+            <input
+              type="number"
+              id="price"
+              name="price"
+              placeholder="Enter Item price"
+            />
+          </div>
+          <div class="input_box">
+            <label for="qtn">Item Qtn</label>
+            <input
+              type="text"
+              id="qtn"
+              name="qtn"
+              placeholder="Enter Item qtn"
+            />
+          </div>
+          <div class="input_box">
+            <button type="submit">Add Item</button>
+          </div>
+        </form>
+      </div>
+      <div class="main_bottom" id="main_bottom"></div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
